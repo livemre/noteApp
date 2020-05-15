@@ -1,0 +1,463 @@
+body {
+  background-color: #303030;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.allNotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.note-card {
+  background-color: #424242;
+  padding: 10px;
+  width: 20vw;
+  margin: 1vw;
+  
+  border-radius: 5px;
+  border: solid 1px rgba(230, 230, 230, 0.397);
+}
+
+.note-card:hover {
+  background-color: #161616;
+  border-radius: 5px;
+  border: solid 1px rgba(119, 255, 16, 0.973);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.note-card:hover .iconSet {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.note-card .headNote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.note-card .titleNote {
+  color: #dddddd;
+  font-size: 1rem;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.note-card .contentNote {
+  color: #b6b6b6;
+  font-size: 0.8rem;
+  margin: 5px 0 0;
+}
+
+.note-card .iconSet {
+  margin-top: 15px;
+  opacity: 1;
+  color: lightblue;
+  font-size: 1.3rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+}
+
+.note-card i {
+  padding-right: 10px;
+}
+
+.note-card i:hover {
+  color: #ff0080;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.note-card .paint {
+  color: rosybrown;
+}
+
+.paintDiv {
+  background-color: royalblue;
+  transform: translateY(50px);
+  margin-top: 50px;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  position: relative;
+}
+
+.paintIcon {
+  background-color: yellow;
+
+}
+
+.paintContainer {
+  transition: all 0.2s;
+  
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100px;
+  transform: translateY(-60px);
+}
+
+.paintIcon:hover > .paintContainer {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
+
+.changeColor{
+  
+  z-index: 1;
+}
+
+.changeColor2{
+  
+  z-index: 1;
+}
+
+.changeColor2:hover .paintZone2{
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+
+  
+
+}
+
+
+
+.paintZone{
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-75px);
+  z-index: -1;
+  border-color: 1px solid #dddddd;
+  
+ 
+  
+}
+
+.paintZone2{
+  visibility: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-75px);
+  z-index: -1;
+  border-color: 1px solid #dddddd;
+  
+ 
+  
+}
+
+
+
+.changeColor:hover .paintZone{
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+
+  
+
+}
+
+.colors{
+  background-color: #272727;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6b6b6;
+  
+  
+  
+}
+
+.colors i{
+  color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0.5rem;
+  
+  padding: 4px;
+  opacity: 0.3;
+
+  
+  
+  
+
+}
+
+.colors i:hover{
+  color: transparent;
+  
+  opacity: 1;
+  
+}
+
+
+.colors .red{
+  background-color: rgb(224, 67, 67);
+  
+
+  
+}
+
+
+
+.colors .blue{
+  background-color: rgb(68, 68, 245);
+  
+}
+
+.colors .green{
+  background-color: rgb(84, 204, 84);
+ 
+}
+
+.colors .pink{
+  background-color: rgb(231, 146, 160);
+  
+}
+
+.colors .brown{
+  background-color: rgb(189, 75, 75);
+  
+}
+
+.colors .purple{
+  background-color: rgb(218, 63, 218);
+ 
+}
+
+.colors .yellow{
+  background-color: rgb(196, 196, 51);
+  
+}
+
+
+.colors .white{
+  background-color: white;
+ 
+}
+
+.trash{
+  
+  color: aquamarine;
+}
+
+.noteAdd{
+  margin: auto;
+  padding: 2px;
+  background-color: rgb(27, 27, 27);
+  border: 1px solid #dadada91;
+  border-radius: 10px;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgb(15, 15, 15);
+  
+}
+
+.noteAddTitle{
+  padding: 10px;
+  color: #afafaf;
+  font-size: 1rem;
+  background-color: rgb(36, 36, 36);
+  flex: 1;
+}
+
+.bottomSide{
+  margin: 1px;
+  padding: 1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(71, 71, 71);
+  border-radius: 5px;
+}
+
+.bottomSide i{
+  color: #afafaf;
+  font-size: 1.3rem;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.bottomSide i:hover{
+  color: #ffffff;
+  transition: all 1s;
+}
+
+
+.bottomSide button{
+
+  border-radius: 10px;
+  margin-left: 10px;
+  margin: 5px;
+}
+
+.bottomSide button:hover{
+
+  transition: all 1s;
+}
+
+.bottomSide .btn-addNote{
+  background-color: #424242;
+  border: none;
+  color: #afafaf;
+  padding: 10px;
+}
+
+.bottomSide .btn-addNote:hover{
+  transition: all 3sn;
+  background-color: #60ac73;
+  color: #ffffff;
+  
+  
+}
+
+.bottomSide .btn-clear{
+  background-color: #424242;
+  border: none;
+  color: #afafaf;
+  padding: 10px;
+}
+
+.bottomSide .btn-clear:hover{
+  transition: all 3sn;
+  background-color: #ac6060;
+  color: #ffffff;
+  
+  
+}
+
+
+
+
+
+.colors2{
+  background-color: #272727;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6b6b6;
+  
+  
+  
+}
+
+.colors2 i{
+  color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 0.5rem;
+  
+  padding: 4px;
+  opacity: 0.3;
+
+  
+  
+  
+
+}
+
+.colors2 i:hover{
+  color: transparent;
+  
+  opacity: 1;
+  
+}
+
+
+.colors2 .red{
+  background-color: rgb(224, 67, 67);
+  
+
+  
+}
+
+
+
+.colors2 .blue{
+  background-color: rgb(68, 68, 245);
+  
+}
+
+.colors2 .green{
+  background-color: rgb(84, 204, 84);
+ 
+}
+
+.colors2 .pink{
+  background-color: rgb(231, 146, 160);
+  
+}
+
+.colors2 .brown{
+  background-color: rgb(189, 75, 75);
+  
+}
+
+.colors2 .purple{
+  background-color: rgb(218, 63, 218);
+ 
+}
+
+.colors2 .yellow{
+  background-color: rgb(196, 196, 51);
+  
+}
+
+
+.colors2 .white{
+  background-color: white;
+ 
+}
+
+
+.baslik-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 36, 36);
+
+}
+
+.baslik-flex i{
+  color: rgb(196, 196, 196);
+  font-size: 1rem;
+  margin: 5px;
+  
+}
