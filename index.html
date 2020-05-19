@@ -10,42 +10,128 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <img src="logo.png" alt="logo">
+        <ul>
+            <li>Home</li>
+            <li>Faq</li>
+            <li>Donate</li>
+            <li>Contact</li>
+        </ul>
+    </div>
     <div class="noteAdd">
         <div class="baslik-flex">
-            <div class="noteAddTitle" contenteditable="true" role="textbox" aria-label="Başlık">Baslik</div>
+            <div class="noteAddTitle" contenteditable="true" role="textbox" aria-label="Başlık" data-ph="Title"></div>
             <i class="fas fa-thumbtack"></i>
         </div>
-        
-        <div class="noteAddTitle" contenteditable="true" role="textbox" aria-label="Başlık">Not alin...</div>
+
+        <div id="noteContent" class="noteContent" contenteditable="true" role="textbox" aria-label="Başlık" data-ph="Write a note..."></div>
         <div class="bottomSide">
-            <i class="fas fa-palette changeColor2">
-                <div class="paintZone2">
-
-                    <div class="colors2">
-
-                        <i class="fas fa-circle white"></i>
-                        <i class="fas fa-circle red"></i>
-                        <i class="fas fa-circle blue"></i>
-                        <i class="fas fa-circle green"></i>
-                        <i class="fas fa-circle yellow"></i>
-                        <i class="fas fa-circle purple"></i>
-                        <i class="fas fa-circle pink"></i>
-                        <i class="fas fa-circle brown"></i>
-
-                    </div>
-                </div>
-            </i>
-            <i class="fas fa-images"></i>
+            <i id="browseImage" class="fas fa-images"></i>
+            <div class="colors2">
+                <i id="addWhite" class="fas fa-circle white"></i>
+                <i id="addRed" class="fas fa-circle red"></i>
+                <i id="addBlue" class="fas fa-circle blue"></i>
+                <i id="addGreen" class="fas fa-circle green"></i>
+                <i id="addYellow" class="fas fa-circle yellow"></i>
+                <i id="addPurple" class="fas fa-circle purple"></i>
+                <i id="addPink" class="fas fa-circle pink"></i>
+                <i id="addBrown" class="fas fa-circle brown"></i>
+            </div>
             
-            <button class="btn-clear">Clear</button>
+
+            
             <button class="btn-addNote">Add Note</button>
         </div>
-        
+
     </div>
     <div class="allNotes">
         <div class="note-card">
             <div class="headNote">
-                <p class="titleNote">What is Lorem Ipsum?</p>
+                <p class="titleNote">1 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="note-card purple">
+            <div class="headNote">
+                <p class="titleNote">2 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy </p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card red">
+            <div class="noteImage">
+                <img src="motor.jpg" alt="sanane">
+            </div>
+            <div class="headNote">
+                <p class="titleNote">3 What is Lorem Ipsum?</p>
 
             </div>
 
@@ -85,8 +171,410 @@
         </div>
 
 
+        <div class="note-card green">
+            <div class="headNote">
+                <p class="titleNote">4 What is Lorem Ipsum?</p>
 
-        <script src="script.js"></script>
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card">
+            <div class="noteImage">
+                <img src="flowers.jpg" alt="sanane">
+            </div>
+            <div class="headNote">
+                <p class="titleNote">5 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card blue">
+            <div class="headNote">
+                <p class="titleNote">6 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card">
+            <div class="noteImage">
+                <img src="window.jpg" alt="sanane">
+            </div>
+            <div class="headNote">
+                <p class="titleNote">7 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card green">
+            <div class="headNote">
+                <p class="titleNote">8 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card blue">
+            <div class="headNote">
+                <p class="titleNote">9 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="note-card">
+            <div class="noteImage">
+                <img src="car.jpg" alt="sanane">
+            </div>
+            <div class="headNote">
+                <p class="titleNote">10 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card blue">
+            <div class="headNote">
+                <p class="titleNote">11 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="note-card">
+            <div class="headNote">
+                <p class="titleNote">12 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="note-card purple">
+            <div class="noteImage">
+                <img src="laptop.jpg" alt="sanane">
+            </div>
+            <div class="headNote">
+                <p class="titleNote">13 What is Lorem Ipsum?</p>
+
+            </div>
+
+            <p class="contentNote">Lorem Ipsum is simply dummy text of.</p>
+            <div class="iconSet">
+                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-palette changeColor">
+                    <div class="paintZone">
+
+                        <div class="colors">
+
+                            <i class="fas fa-circle white"></i>
+                            <i class="fas fa-circle red"></i>
+                            <i class="fas fa-circle blue"></i>
+                            <i class="fas fa-circle green"></i>
+                            <i class="fas fa-circle yellow"></i>
+                            <i class="fas fa-circle purple"></i>
+                            <i class="fas fa-circle pink"></i>
+                            <i class="fas fa-circle brown"></i>
+
+                        </div>
+                    </div>
+                </i>
+
+                <i class="fas fa-images"></i>
+                <i class="fas fa-trash-alt trash"></i>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="logo.png" alt="logo">
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
